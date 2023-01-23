@@ -30,7 +30,7 @@ const onDown = (e) => {
 const onUp = (e) => {
     if (current === State.Action) {
         current = State.Prompt;
-        const time = (Date.now() - start) / 1000;
+        const time = ((Date.now() - start) / 1000).toFixed(3);
         background.className = 'score';
         background.innerHTML = `${time}s<p>Click to try again.</p>`;
     } else if (current === State.Wait) {
