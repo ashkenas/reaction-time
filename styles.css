@@ -19,12 +19,17 @@ html, body {
     text-align: center;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+}
+
+p {
+    font-size: .5em;
 }
 
 #game.start { background-color: var(--c-start); }
 #game.wait { background-color: var(--c-wait); }
 #game.early { background-color: var(--c-early); }
-#game.tap { background-color: var(--c-tap); }
+#game.action { background-color: var(--c-action); }
 #game.score { background-color: var(--c-score); }
 
 *, *::after, *::before {
@@ -36,6 +41,6 @@ html, body {
     --c-start: #ce59d6;
     --c-wait: #e6595a;
     --c-early: #ffca5a;
-    --c-tap: #5ad284;
+    --c-action: #5ad284;
     --c-score: #5a59ff;
 }
