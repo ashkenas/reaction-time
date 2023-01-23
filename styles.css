@@ -44,3 +44,9 @@ p {
     --c-action: #5ad284;
     --c-score: #5a59ff;
 }
+
+@media (orientation: portrait) {
+    html {
+        font-size: 32px;
+    }
+}
